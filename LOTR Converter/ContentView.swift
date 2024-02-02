@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showExchangeInfo = false
+    @State var leftAmount = ""
+    @State var rightAmount = ""
+    
     var body: some View {
         ZStack {
             //Background
@@ -44,9 +48,11 @@ struct ContentView: View {
                                 .font(.headline)
                                 .foregroundStyle(.white)
                         }
+                        .padding(.bottom, -5)
                         
                         //Textfield
-                        Text("Textfield")
+                        TextField("Amount", text: $leftAmount)
+                            .textFieldStyle(.roundedBorder)
                     }
                     
                     //Equal sign
@@ -54,6 +60,7 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .foregroundStyle(.white)
                         .symbolEffect(.pulse)
+                        .padding(.top, 5)
                     
                     //Right
                     VStack {
@@ -70,18 +77,34 @@ struct ContentView: View {
                                 .scaledToFit()
                                 .frame(height: 33)
                         }
+                        .padding(.bottom, -5)
                         
                         //Textfield
-                        Text("Textfield")
+                        TextField("Amount", text: $rightAmount)
+                            .textFieldStyle(.roundedBorder)
+                            .multilineTextAlignment(.trailing)
+                        
                     }
                 }
+                .padding()
+                .padding(.bottom, 10)
+                .background(.black.opacity(0.5))
+                
                 
                 Spacer()
                 
                 //Info button
-                Image(systemName: "info.circle.fill")
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
+                HStack {
+                    Spacer()
+                    Button {
+                        showExchangeInfo.toggle()
+                    } label: {
+                        Image(systemName: "info.circle.fill")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                    }
+                    .padding(.trailing)
+                }
             }
             //.border(.blue)
         }
