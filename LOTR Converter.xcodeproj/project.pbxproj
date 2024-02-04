@@ -11,6 +11,8 @@
 		FA28C0E02B680CE500323242 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28C0DF2B680CE500323242 /* ContentView.swift */; };
 		FA28C0E22B680CE600323242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA28C0E12B680CE600323242 /* Assets.xcassets */; };
 		FA28C0E52B680CE600323242 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA28C0E42B680CE600323242 /* Preview Assets.xcassets */; };
+		FABA53052B6F9DD600400F03 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA53042B6F9DD600400F03 /* ExchangeRate.swift */; };
+		FABB16302B6DB932008BFF50 /* ExchangeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB162F2B6DB932008BFF50 /* ExchangeInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		FA28C0DF2B680CE500323242 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA28C0E12B680CE600323242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA28C0E42B680CE600323242 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FABA53042B6F9DD600400F03 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		FABB162F2B6DB932008BFF50 /* ExchangeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				FA28C0DD2B680CE500323242 /* LOTR_ConverterApp.swift */,
 				FA28C0DF2B680CE500323242 /* ContentView.swift */,
+				FABB162F2B6DB932008BFF50 /* ExchangeInfo.swift */,
+				FABA53042B6F9DD600400F03 /* ExchangeRate.swift */,
 				FA28C0E12B680CE600323242 /* Assets.xcassets */,
 				FA28C0E32B680CE600323242 /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABA53052B6F9DD600400F03 /* ExchangeRate.swift in Sources */,
+				FABB16302B6DB932008BFF50 /* ExchangeInfo.swift in Sources */,
 				FA28C0E02B680CE500323242 /* ContentView.swift in Sources */,
 				FA28C0DE2B680CE500323242 /* LOTR_ConverterApp.swift in Sources */,
 			);
