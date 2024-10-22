@@ -15,6 +15,7 @@
 		FA28C0E02B680CE500323242 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28C0DF2B680CE500323242 /* ContentView.swift */; };
 		FA28C0E22B680CE600323242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA28C0E12B680CE600323242 /* Assets.xcassets */; };
 		FA28C0E52B680CE600323242 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA28C0E42B680CE600323242 /* Preview Assets.xcassets */; };
+		FA947CDC2CC7B07100920748 /* CurrencyTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA947CDB2CC7B05900920748 /* CurrencyTip.swift */; };
 		FABA53052B6F9DD600400F03 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA53042B6F9DD600400F03 /* ExchangeRate.swift */; };
 		FABB16302B6DB932008BFF50 /* ExchangeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB162F2B6DB932008BFF50 /* ExchangeInfo.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		FA28C0DF2B680CE500323242 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA28C0E12B680CE600323242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA28C0E42B680CE600323242 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA947CDB2CC7B05900920748 /* CurrencyTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTip.swift; sourceTree = "<group>"; };
 		FABA53042B6F9DD600400F03 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		FABB162F2B6DB932008BFF50 /* ExchangeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 		FA28C0DC2B680CE500323242 /* LOTR Converter */ = {
 			isa = PBXGroup;
 			children = (
+				FA947CDB2CC7B05900920748 /* CurrencyTip.swift */,
 				FA28C0DD2B680CE500323242 /* LOTR_ConverterApp.swift */,
 				FA1301732B7F062B0009023B /* Currency.swift */,
 				FA28C0DF2B680CE500323242 /* ContentView.swift */,
@@ -160,6 +163,7 @@
 				FA1301702B7615AB0009023B /* SelectCurrency.swift in Sources */,
 				FABB16302B6DB932008BFF50 /* ExchangeInfo.swift in Sources */,
 				FA28C0E02B680CE500323242 /* ContentView.swift in Sources */,
+				FA947CDC2CC7B07100920748 /* CurrencyTip.swift in Sources */,
 				FA28C0DE2B680CE500323242 /* LOTR_ConverterApp.swift in Sources */,
 				FA1301742B7F062B0009023B /* Currency.swift in Sources */,
 				FA1301722B761D7D0009023B /* CurrencyIcon.swift in Sources */,

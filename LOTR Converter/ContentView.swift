@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TipKit
 
 struct ContentView: View {
     @State var showExchangeInfo = false
@@ -60,6 +61,7 @@ struct ContentView: View {
                         .onTapGesture {
                             showSelectCurrency.toggle()
                         }
+                        .popoverTip(CurrencyTip(), arrowEdge: .bottom)
                         
                         //Textfield
                         TextField("Amount", text: $leftAmount)
@@ -130,6 +132,9 @@ struct ContentView: View {
             if leftTyping {
                 rightAmount = leftCurrency.convert(leftAmount, to: rightCurrency)
             }
+        }
+        .task {
+            try? Tips.configure()
         }
         .onChange(of: rightAmount) {
             if rightTyping {
