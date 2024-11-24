@@ -65,17 +65,17 @@
 		FA28C0DC2B680CE500323242 /* LOTR Converter */ = {
 			isa = PBXGroup;
 			children = (
-				FA947CDB2CC7B05900920748 /* CurrencyTip.swift */,
-				FA28C0DD2B680CE500323242 /* LOTR_ConverterApp.swift */,
-				FA1301732B7F062B0009023B /* Currency.swift */,
+				FA28C0E32B680CE600323242 /* Preview Content */,
+				FA28C0E12B680CE600323242 /* Assets.xcassets */,
 				FA28C0DF2B680CE500323242 /* ContentView.swift */,
-				FA13016F2B7615AB0009023B /* SelectCurrency.swift */,
-				FA1B0E6D2BF2BFE500C87606 /* IconGrid.swift */,
+				FA1301732B7F062B0009023B /* Currency.swift */,
 				FA1301712B761D7D0009023B /* CurrencyIcon.swift */,
+				FA947CDB2CC7B05900920748 /* CurrencyTip.swift */,
 				FABB162F2B6DB932008BFF50 /* ExchangeInfo.swift */,
 				FABA53042B6F9DD600400F03 /* ExchangeRate.swift */,
-				FA28C0E12B680CE600323242 /* Assets.xcassets */,
-				FA28C0E32B680CE600323242 /* Preview Content */,
+				FA1B0E6D2BF2BFE500C87606 /* IconGrid.swift */,
+				FA28C0DD2B680CE500323242 /* LOTR_ConverterApp.swift */,
+				FA13016F2B7615AB0009023B /* SelectCurrency.swift */,
 			);
 			path = "LOTR Converter";
 			sourceTree = "<group>";

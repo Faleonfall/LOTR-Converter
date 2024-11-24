@@ -21,6 +21,8 @@ struct ContentView: View {
     @State var leftCurrency: Currency = .silverPiece
     @State var rightCurrency: Currency = .goldPiece
     
+    let currencyTip = CurrencyTip()
+    
     var body: some View {
         ZStack {
             //Background
@@ -60,8 +62,9 @@ struct ContentView: View {
                         .padding(.bottom, -5)
                         .onTapGesture {
                             showSelectCurrency.toggle()
+                            currencyTip.invalidate(reason: .actionPerformed)
                         }
-                        .popoverTip(CurrencyTip(), arrowEdge: .bottom)
+                        .popoverTip(currencyTip, arrowEdge: .bottom)
                         
                         //Textfield
                         TextField("Amount", text: $leftAmount)
@@ -128,13 +131,13 @@ struct ContentView: View {
                 }
             }
         }
+        .task {
+            try? Tips.configure()
+        }
         .onChange(of: leftAmount) {
             if leftTyping {
                 rightAmount = leftCurrency.convert(leftAmount, to: rightCurrency)
             }
-        }
-        .task {
-            try? Tips.configure()
         }
         .onChange(of: rightAmount) {
             if rightTyping {
