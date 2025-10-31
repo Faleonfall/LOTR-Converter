@@ -41,6 +41,8 @@ struct ContentView: View {
                 Text("Currency Exchange")
                     .font(.largeTitle)
                     .foregroundStyle(.white)
+                    .padding(.top, 10)
+                    .padding(.bottom, 40)
                 
                 //Currency section
                 HStack {
@@ -59,7 +61,7 @@ struct ContentView: View {
                                 .font(.headline)
                                 .foregroundStyle(.white)
                         }
-                        .padding(.bottom, -5)
+                        .padding(.bottom, 5)
                         .onTapGesture {
                             showSelectCurrency.toggle()
                             currencyTip.invalidate(reason: .actionPerformed)
@@ -69,6 +71,7 @@ struct ContentView: View {
                         //Textfield
                         TextField("Amount", text: $leftAmount)
                             .textFieldStyle(.roundedBorder)
+                            .multilineTextAlignment(.center)
                             .focused($leftTyping)
                             .keyboardType(.decimalPad)
                         
@@ -78,7 +81,6 @@ struct ContentView: View {
                     Image(systemName: "equal")
                         .font(.largeTitle)
                         .foregroundStyle(.white)
-                        .symbolEffect(.pulse)
                         .padding(.top, 5)
                     
                     //Right
@@ -96,7 +98,7 @@ struct ContentView: View {
                                 .scaledToFit()
                                 .frame(height: 33)
                         }
-                        .padding(.bottom, -5)
+                        .padding(.bottom, 5)
                         .onTapGesture {
                             showSelectCurrency.toggle()
                         }
@@ -104,7 +106,7 @@ struct ContentView: View {
                         //Textfield
                         TextField("Amount", text: $rightAmount)
                             .textFieldStyle(.roundedBorder)
-                            .multilineTextAlignment(.trailing)
+                            .multilineTextAlignment(.center)
                             .focused($rightTyping)
                             .keyboardType(.decimalPad)
                         

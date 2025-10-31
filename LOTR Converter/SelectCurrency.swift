@@ -40,7 +40,8 @@ struct SelectCurrency: View {
                     dismiss()
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(.brown)
+                .buttonBorderShape(.roundedRectangle(radius: 15))
+                .tint(.brown.mix(with: .black, by: 0.2))
                 .font(.largeTitle)
                 .padding()
                 .foregroundStyle(.white)
