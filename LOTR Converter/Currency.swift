@@ -54,7 +54,7 @@ enum Currency: Double, CaseIterable, Identifiable {
         
         let convertedAmount = (doubleAmount / self.rawValue) * currency.rawValue
         
-        return String(format: "%.2f", convertedAmount)
+        return convertedAmount.formatted(.number.precision(.fractionLength(0...2)))
     }
     
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBC68E462EB63430004373C5 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC68E452EB63430004373C5 /* KeyboardObserver.swift */; };
 		FA1301702B7615AB0009023B /* SelectCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13016F2B7615AB0009023B /* SelectCurrency.swift */; };
 		FA1301722B761D7D0009023B /* CurrencyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1301712B761D7D0009023B /* CurrencyIcon.swift */; };
 		FA1301742B7F062B0009023B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1301732B7F062B0009023B /* Currency.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CBC68E452EB63430004373C5 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		FA13016F2B7615AB0009023B /* SelectCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrency.swift; sourceTree = "<group>"; };
 		FA1301712B761D7D0009023B /* CurrencyIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyIcon.swift; sourceTree = "<group>"; };
 		FA1301732B7F062B0009023B /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
@@ -65,8 +67,6 @@
 		FA28C0DC2B680CE500323242 /* LOTR Converter */ = {
 			isa = PBXGroup;
 			children = (
-				FA28C0E32B680CE600323242 /* Preview Content */,
-				FA28C0E12B680CE600323242 /* Assets.xcassets */,
 				FA28C0DF2B680CE500323242 /* ContentView.swift */,
 				FA1301732B7F062B0009023B /* Currency.swift */,
 				FA1301712B761D7D0009023B /* CurrencyIcon.swift */,
@@ -74,8 +74,11 @@
 				FABB162F2B6DB932008BFF50 /* ExchangeInfo.swift */,
 				FABA53042B6F9DD600400F03 /* ExchangeRate.swift */,
 				FA1B0E6D2BF2BFE500C87606 /* IconGrid.swift */,
+				CBC68E452EB63430004373C5 /* KeyboardObserver.swift */,
 				FA28C0DD2B680CE500323242 /* LOTR_ConverterApp.swift */,
 				FA13016F2B7615AB0009023B /* SelectCurrency.swift */,
+				FA28C0E12B680CE600323242 /* Assets.xcassets */,
+				FA28C0E32B680CE600323242 /* Preview Content */,
 			);
 			path = "LOTR Converter";
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC68E462EB63430004373C5 /* KeyboardObserver.swift in Sources */,
 				FA1B0E6E2BF2BFE500C87606 /* IconGrid.swift in Sources */,
 				FABA53052B6F9DD600400F03 /* ExchangeRate.swift in Sources */,
 				FA1301702B7615AB0009023B /* SelectCurrency.swift in Sources */,

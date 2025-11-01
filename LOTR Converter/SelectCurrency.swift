@@ -48,6 +48,18 @@ struct SelectCurrency: View {
             }
             .padding()
             .multilineTextAlignment(.center)
+            .onChange(of: topCurrency) { oldValue, newValue in
+                // If the new top equals the current bottom, push the old top down
+                if newValue == bottomCurrency {
+                    bottomCurrency = oldValue
+                }
+            }
+            .onChange(of: bottomCurrency) { oldValue, newValue in
+                // If the new bottom equals the current top, pull the old bottom up
+                if newValue == topCurrency {
+                    topCurrency = oldValue
+                }
+            }
         }
     }
 }

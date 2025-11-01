@@ -22,6 +22,7 @@ struct ContentView: View {
     @State var rightCurrency: Currency = .goldPiece
     
     let currencyTip = CurrencyTip()
+    @StateObject private var keyboard = KeyboardObserver()
     
     var body: some View {
         ZStack {
@@ -132,6 +133,16 @@ struct ContentView: View {
                     .padding(.trailing)
                 }
             }
+            .safeAreaInset(edge: .bottom) {
+                if keyboard.height > 0 {
+                    Color.clear.frame(height: 15)
+                }
+            }
+            .animation(.easeOut(duration: 0.25), value: keyboard.height)
+        }
+        .onTapGesture {
+            leftTyping = false
+            rightTyping = false
         }
         .task {
             try? Tips.configure()
