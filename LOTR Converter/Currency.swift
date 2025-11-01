@@ -15,7 +15,6 @@ enum Currency: Double, CaseIterable, Identifiable {
     case goldPiece = 1
     
     var id: Double { rawValue }
-    //var id: Currency { self }
     
     var image: ImageResource {
         switch self {
@@ -48,13 +47,22 @@ enum Currency: Double, CaseIterable, Identifiable {
     }
     
     func convert(_ amountString: String, to currency: Currency) -> String {
-        guard let doubleAmount = Double(amountString) else {
+        // Formatter that follows user’s region *and* number format settings
+        let formatter = NumberFormatter()
+        formatter.locale = Locale.current
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 2
+        
+        // Parse input using user’s actual decimal separator
+        guard let number = formatter.number(from: amountString) else {
             return ""
         }
         
+        let doubleAmount = number.doubleValue
         let convertedAmount = (doubleAmount / self.rawValue) * currency.rawValue
         
-        return convertedAmount.formatted(.number.precision(.fractionLength(0...2)))
+        // Format output again using user’s same system preference
+        return formatter.string(from: NSNumber(value: convertedAmount)) ?? ""
     }
     
 }
